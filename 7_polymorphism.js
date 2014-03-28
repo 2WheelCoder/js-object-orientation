@@ -11,9 +11,9 @@ function Teacher(name) {
 
 Teacher.prototype = new Employee();
 
-Teacher.prototype.ideate = function(idea) {
-    return this.name + ' came up with ' + idea + ' but could not repeat it when asked.';
-}
+// Teacher.prototype.ideate = function(idea) {
+//     return this.name + ' came up with ' + idea + ' but could not repeat it when asked.';
+// }
 
 // var tiffany = new Employee('Tiffany');
 // tiffany.ideate('Reveal');
