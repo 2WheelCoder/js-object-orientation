@@ -1,20 +1,23 @@
 function Employee(name) {
     this.name = name;
     this.ideate = function(idea) {
-        return this.name + ' came up with ' + idea '.';
+        return this.name + ' came up with ' + idea + '.';
     };
 }
 
-function Teacher(name, course) {
-    this.course = course;
-    this.ideate = function(idea) {
-        return this.name ' came up with ' + idea + ' but could not repeat it when asked.';
-    }
+function Teacher(name) {
+    this.name = name;
 }
 
 Teacher.prototype = new Employee();
 
-// var rich = new Teacher('Rich Bowen');
+Teacher.prototype.ideate = function(idea) {
+    return this.name + ' came up with ' + idea + ' but could not repeat it when asked.';
+}
+
+// var tiffany = new Employee('Tiffany');
+// tiffany.ideate('Reveal');
+// var rich = new Teacher('Rich Bowen', 'UCD');
 // rich.ideate('a brilliant explanation');
 
 // show prototype chain
