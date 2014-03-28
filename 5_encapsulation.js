@@ -9,4 +9,5 @@ function Employee(name, age) {
 
 // var david = new Employee('David Slayden', 235);
 // david.name;
+// david.age; // undefined!
 // david.peekAtID();

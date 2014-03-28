@@ -2,7 +2,7 @@ function Teacher(name, course) {
     this.name = name;
     this.course = course;
     this.teach = function(student, topic) {
-        return this.name + ' taught ' + topic + ' to ' + student + '.';
+        return this.name + ' taught ' + student + ' to ' + topic + '.';
     }
 }
 

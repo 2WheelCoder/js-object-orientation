@@ -1,14 +1,15 @@
 function Employee(name) {
     this.name = name;
     this.ideate = function(idea) {
-        return this.name + ' came up with ' + idea '.';
+        return this.name + ' came up with ' + idea + '.';
     };
 }
 
 function Teacher(name, course) {
+    this.name = name;
     this.course = course;
-    this.teach = function(topic, student) {
-        return this.name + ' taught ' + topic + ' to ' + student + '.';
+    this.teach = function(student, topic) {
+        return this.name + ' taught ' + student + ' to ' + topic + '.';
     };
 }
 

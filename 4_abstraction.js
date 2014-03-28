@@ -5,7 +5,7 @@ function Teacher(name, course) {
         return this.name + ' taught ' + topic + ' to ' + student + '.';
     };
     this.ideate = function(idea) {
-        return this.name + ' came up with ' + idea '.';
+        return this.name + ' came up with ' + idea + '.';
     };
 }
 
@@ -16,14 +16,14 @@ function Administrator(name, title) {
         return this.name + ' planned ' + event + '.';
     };
     this.ideate = function(idea) {
-        return this.name + ' came up with ' + idea '.';
+        return this.name + ' came up with ' + idea + '.';
     };
 }
 
 function Employee(name) {
     this.name = name;
     this.ideate = function(idea) {
-        return this.name + ' came up with ' + idea '.';
+        return this.name + ' came up with ' + idea + '.';
     };
 }
 
@@ -32,5 +32,5 @@ function Employee(name) {
 
 // var rich = new Employee('Rich Bowen');
 // rich.ideate('useful, usable and compelling');
-// var david = new Employee('David Slayden');
+// david = new Employee('David Slayden');
 // david.ideate('big data');
